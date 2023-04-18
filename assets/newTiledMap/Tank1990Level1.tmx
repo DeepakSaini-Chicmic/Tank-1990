@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="43" height="23" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="12">
+ <tileset firstgid="1" source="grass-Layers.tsx"/>
+ <tileset firstgid="551" source="redWall.tsx"/>
+ <tileset firstgid="704" source="SilverWall.tsx"/>
+ <tileset firstgid="848" source="WaterLayer.tsx"/>
+ <layer id="1" name="Grass-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztltEJgEAMQ0/dQt3idP/VzAKFck0CQh8E+tGPQhLuxmgUbNAOHQv70azihC7oXtiPZhUTeqB3YT+aVTi8Y+HwjoXDOxbuLmfuiHB3OXNHhLvLmTvUVLPkzF81S878VbOkzgDTN3UGmL6pM8D07U9vUob+uzSNhg+RFAyv
+  </data>
+ </layer>
+ <layer id="2" name="Red-Wall-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJzNVsERwzAI82WZNp0g7QZJ99+nPPrwA1EFi9S68yPns4IQ2LQ2H25La3db6/LvSH5jsxiftl5BrCo9PU/EifZ2+z5svYM4GD0Mep6Ic+R/qrz2eYlyxOQPYaROMjqVXB6QnoyfSi4PyLeMn0ouD6jHZ7wTUY+rfFMC9bjKtwiMp1W+nz3PeFrl+9nzjKdVvs/YjwgorzNqQL5cOWdFXExvquYsVg/zfo7UgHJuZN7P6hq44s6vnLV7jY9vHVYjm7PN8bAa2Xtgd2qyAh9pqDvX
+  </data>
+ </layer>
+ <layer id="4" name="Water-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztVkEOgDAII9kH1QeoD1D/fxQPJD0uISlV14QjoVDoZjbAxNTMZo+l6ddbPWfz2ElcM/UOzzk9LhJXdr2BOrBvNgP2zWagfEOhOWqvugOhOWqvugOhOWqvugN/wtc8Dvup7K3H47CfSv/umRP2U+nfb33n1O8M+anPGPkp/yUeIL8bEEAnDQ==
+  </data>
+ </layer>
+ <layer id="3" name="Silver-Wall-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztlEEOgEAIA8n+/1HqWT2rr7FP2MIKa9JJeoM0AYoZx9LMVmhr39SPZIfnAZ2d3my9ENl48lSVQU+eqjJ4we+GHsLX05NJ5e9l+dPvnX3vLLqTPtg5Re4kupPMOUW9Mufk8RqVj4yd6I8KMTcvRR1BFA==
+  </data>
+ </layer>
+ <objectgroup id="6" name="PlayerPosition">
+  <object id="1" x="761.995" y="697.446">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="EnemyPositions">
+  <object id="9" x="50.3799" y="55.103">
+   <point/>
+  </object>
+  <object id="10" x="637.62" y="50.3799">
+   <point/>
+  </object>
+  <object id="11" x="1325.62" y="51.9542">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
