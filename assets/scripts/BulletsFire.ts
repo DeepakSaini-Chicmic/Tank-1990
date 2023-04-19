@@ -8,73 +8,74 @@ import {
   tween,
   Vec3,
 } from "cc";
+import { ANGLE } from "./Constants";
+import { TankMovement } from "./TankMovement";
 const { ccclass, property } = _decorator;
 
 @ccclass("BulletsFire")
 export class BulletsFire extends Component {
   @property(Prefab) Bullet: Prefab;
-  onLoad() {}
-  start() {
-    this.node.on(Input.EventType.MOUSE_UP, this.fire, this);
-  }
-  fire = (event) => {
+  @property(Node) Map: Node;
+  start() {}
+
+  fire() {
+    let tank = this.Map.getComponent(TankMovement).tank;
+    let tankPosition = tank.getWorldPosition();
     let bulletCreated = instantiate(this.Bullet);
     this.node.addChild(bulletCreated);
-    let tankPosition = this.node.getPosition();
-    bulletCreated.setPosition(tankPosition);
-    bulletCreated.angle = this.node.angle;
-    console.log(event);
+    bulletCreated.setWorldPosition(tankPosition);
+    bulletCreated.angle = tank.angle;
+    this.directBullet(bulletCreated, tankPosition);
+    console.log("Firing");
+  }
 
-    switch (this.node.angle) {
-      case 0: {
-        console.log(this.node.angle);
-        console.log("Bullet angle", bulletCreated.angle);
+  directBullet(bullet: Node, tankPosition: Vec3) {
+    switch (bullet.angle) {
+      case ANGLE.UP: {
+        console.log("UP ANGLE");
 
-        tween(bulletCreated)
-          .by(0.3, {
-            position: new Vec3(tankPosition.x, tankPosition.y + 10),
-            angle: 0,
+        tween(bullet)
+          .by(0.5, {
+            worldPosition: new Vec3(0, tankPosition.y + 10),
           })
           .repeatForever()
           .start();
+        break;
       }
-      case 90: {
-        console.log(this.node.angle);
-        console.log("Bullet angle", bulletCreated.angle);
+      case ANGLE.RIGHT: {
+        console.log("RIGHT ANGLE");
 
-        tween(bulletCreated)
-          .by(0.3, {
-            position: new Vec3(tankPosition.x - 10, tankPosition.y),
-            angle: 90,
+        tween(bullet)
+          .by(0.5, {
+            worldPosition: new Vec3(0, tankPosition.y - 10),
           })
           .repeatForever()
           .start();
+        break;
       }
-      case 180: {
-        console.log(this.node.angle);
-        console.log("Bullet angle", bulletCreated.angle);
+      case ANGLE.LEFT: {
+        console.log("LEFT ANGLE");
 
-        tween(bulletCreated)
-          .by(0.3, {
-            position: new Vec3(tankPosition.x, tankPosition.y - 10),
-            angle: 180,
+        tween(bullet)
+          .by(0.5, {
+            worldPosition: new Vec3(tankPosition.x - 10, 0),
           })
           .repeatForever()
           .start();
+        break;
       }
-      case 270: {
-        console.log(this.node.angle);
-        console.log("Bullet angle", bulletCreated.angle);
+      case ANGLE.DOWN: {
+        console.log("DOWN ANGLE");
 
-        tween(bulletCreated)
-          .by(0.3, {
-            position: new Vec3(tankPosition.x + 10, tankPosition.y),
-            angle: 270,
+        tween(bullet)
+          .by(0.5, {
+            worldPosition: new Vec3(tankPosition.x + 10, 0),
           })
           .repeatForever()
           .start();
+        break;
       }
     }
-  };
+  }
   update(deltaTime: number) {}
 }

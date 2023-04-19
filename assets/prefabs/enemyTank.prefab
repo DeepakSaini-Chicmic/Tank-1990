@@ -32,15 +32,18 @@
       },
       {
         "__id__": 12
+      },
+      {
+        "__id__": 14
       }
     ],
     "_prefab": {
-      "__id__": 14
+      "__id__": 16
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
+      "x": 362.831,
+      "y": 200.491,
       "z": 0
     },
     "_lrot": {
@@ -126,8 +129,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 60,
-      "height": 40
+      "width": 40,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -162,7 +165,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "047b2196-6d86-476e-ad7b-5f5368d93193@f9941",
+      "__uuid__": "24e2bca1-dbb9-404e-8100-90cc54970eed@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -207,8 +210,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 60,
-      "height": 40
+      "width": 40,
+      "height": 60
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -222,7 +225,7 @@
     "fileId": "4fznCOPqNNzLMtLq7jdVxb"
   },
   {
-    "__type__": "cc.BoxCollider2D",
+    "__type__": "cc.RigidBody2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -231,6 +234,39 @@
     "_enabled": true,
     "__prefab": {
       "__id__": 11
+    },
+    "enabledContactListener": true,
+    "bullet": true,
+    "awakeOnLoad": true,
+    "_group": 1,
+    "_type": 2,
+    "_allowSleep": true,
+    "_gravityScale": 0,
+    "_linearDamping": 0,
+    "_angularDamping": 0,
+    "_linearVelocity": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_angularVelocity": 0,
+    "_fixedRotation": false,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "6d3+5cv+5D1YAhIAOHMbci"
+  },
+  {
+    "__type__": "cc.BoxCollider2D",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 13
     },
     "tag": 0,
     "_group": 1,
@@ -245,8 +281,8 @@
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 60,
-      "height": 40
+      "width": 40,
+      "height": 60
     },
     "_id": ""
   },
@@ -263,7 +299,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 13
+      "__id__": 15
     },
     "_id": ""
   },

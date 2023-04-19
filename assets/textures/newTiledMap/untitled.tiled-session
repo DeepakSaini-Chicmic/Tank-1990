@@ -1,0 +1,62 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Tank1990Level1.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "SilverWall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tank1990Level1.tmx": {
+            "scale": 0.6351744186046511,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 1324.8329519450804,
+                "y": 52.74141876430201
+            }
+        },
+        "Tank1990Level1.tmx#Crown": {
+            "scaleInEditor": 1
+        },
+        "WaterLayer.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "grass-Layers.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "redWall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "/Users/deepaksaini/Documents/newTiledMap",
+    "map.height": 23,
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.width": 43,
+    "openFiles": [
+        "Tank1990Level1.tmx",
+        "redWall.tsx",
+        "grass-Layers.tsx",
+        "WaterLayer.tsx",
+        "SilverWall.tsx"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "SilverWall.tsx",
+        "WaterLayer.tsx",
+        "grass-Layers.tsx",
+        "redWall.tsx",
+        "Tank1990Level1.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}

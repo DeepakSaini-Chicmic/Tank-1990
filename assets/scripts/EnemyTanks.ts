@@ -1,14 +1,18 @@
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, Component, Node, tween, Vec3 } from "cc";
 const { ccclass, property } = _decorator;
 
-@ccclass('EnemyTanks')
+@ccclass("EnemyTanks")
 export class EnemyTanks extends Component {
-    start() {
+  start() {
+    // tween(this.node)
+    //   .by(1, {
+    //     worldPosition: new Vec3(
+    //       this.node.getPosition().x,
+    //       this.node.getPosition().y + 10
+    //     ),
+    //   })
+    //   .start();
+  }
 
-    }
-
-    update(deltaTime: number) {
-        
-    }
+  update(deltaTime: number) {}
 }
-

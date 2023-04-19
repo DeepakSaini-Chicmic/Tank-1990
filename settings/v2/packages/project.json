@@ -4,5 +4,42 @@
       "width": 1376,
       "height": 736
     }
+  },
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "ENEMY TANK"
+      },
+      {
+        "index": 2,
+        "name": "PLAYER TANK"
+      },
+      {
+        "index": 3,
+        "name": "RED WALLS"
+      },
+      {
+        "index": 4,
+        "name": "WATER"
+      },
+      {
+        "index": 5,
+        "name": "SILVER WALLS"
+      },
+      {
+        "index": 6,
+        "name": "BULLET"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 1,
+      "1": 124,
+      "2": 126,
+      "3": 78,
+      "4": 22,
+      "5": 38,
+      "6": 78
+    }
   }
 }

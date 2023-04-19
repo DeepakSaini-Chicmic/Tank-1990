@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="43" height="23" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="12">
+ <tileset firstgid="1" source="grass-Layers.tsx"/>
+ <tileset firstgid="551" source="redWall.tsx"/>
+ <tileset firstgid="704" source="SilverWall.tsx"/>
+ <tileset firstgid="848" source="WaterLayer.tsx"/>
+ <tileset firstgid="890" name="Crown" tilewidth="32" tileheight="32" tilecount="364" columns="3">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <image source="crown.png" width="100" height="46"/>
+ </tileset>
+ <layer id="1" name="Grass-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztVdEKgzAQa/UvNv/C+f+/5j1sIKWZuVt0RRsIFLFJaO96KXWcifxm7ftgHMH6H0BZH8ancQLrljAbX8YFrO8KdLct4gpZy75m9mTAaK6adw1lX7P6qqwe77Kva5mOzIq8PWDvBs0ItY9CA80IFpE9UQ00I1h49kRqjjlzVtdTA5GszJmzuooaKP22UPSuWkvxzitn5eet+eb1a1ZV5onUifjtZfVqsv+3kLVDixXXgQpO
+  </data>
+ </layer>
+ <layer id="2" name="Red-Wall-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztld0JgDAMhEuWUTdQN1D338dAXzQ0Sbn6U6UfBAqNJeXuagiNrzFQCB1XT3EtsfaeZuYZRq6J4lpi7T3NxjMsXCvFtcTas+joXFZfSjdET++s0lk13RA9vbNKZ9V0Q/T0ziqlpux61JRdDzS7VyLf7VQWtR7UD+j38t1OZVHrQf2Afi/f7VQWtR7UD3/IqfRZDWi6HO9gzXq3JjnZPN7BmtXzeqnHcrKZ6wEvK1/6FzQab7IDhAgk2w==
+  </data>
+ </layer>
+ <layer id="8" name="Eagle-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJADAMBLEHbx1n+GQIgxsJrr8EAAAA5pxK+ndr+2TfA5VCAXs=
+  </data>
+ </layer>
+ <layer id="4" name="Water-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFwxkEMCPwYAdxQDfGA3HCEHBrDtCNuUCcR6Fbh1L8jFS3gswIBOKgIeDvkZiH6AGCBnEagMU5ctwP1jQAi3PkuB+saQC5DBkKZd4oQIDRMps2YCDL7EBmVDyYwahbRwEuAACt5Bk3
+  </data>
+ </layer>
+ <layer id="3" name="Silver-Wall-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztlrEKgDAMRIv//1HaWTurX2M6FEqHkpyJpuLBLWKSR3sG5ymE+aNegfc3clJk8Kyf1UaWrLnfQo6Cvr0aS9b6e9KosWTdqd9BPgV9ezUe8srNigdWblY8sHKz4oGVo5KTEVhLTt5gle7ekhOEFdnztZDdi+YVmVUL2b0ta2Qyo7Pu3EXLmoTniwi9i1F2VpYmq/U/vDar5DnSX9NPzBiJ9QIqiuiH
+  </data>
+ </layer>
+ <objectgroup id="6" name="PlayerPosition">
+  <object id="1" name="Position1" x="656.045" y="582.641">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="EnemyPositions">
+  <object id="9" name="Position3" x="127.524" y="124.375">
+   <point/>
+  </object>
+  <object id="10" name="Position2" x="686.425" y="129.098">
+   <point/>
+  </object>
+  <object id="11" name="Position1" x="1248.48" y="127.524">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
