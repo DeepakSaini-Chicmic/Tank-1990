@@ -20,10 +20,12 @@ export class BulletsFire extends Component {
 
   fire() {
     let tank = this.Map.getComponent(TankMovement).tank;
-    let tankPosition = tank.getWorldPosition();
+    let tankPosition = tank.getPosition();
+    console.log(tankPosition);
+
     let bulletCreated = instantiate(this.Bullet);
-    this.node.addChild(bulletCreated);
-    bulletCreated.setWorldPosition(tankPosition);
+    this.Map.getComponent(TankMovement).tank.addChild(bulletCreated);
+    bulletCreated.setPosition(0, 0, 0);
     bulletCreated.angle = tank.angle;
     this.directBullet(bulletCreated, tankPosition);
     console.log("Firing");

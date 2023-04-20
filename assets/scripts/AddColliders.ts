@@ -56,8 +56,6 @@ export class AddColliders extends Component {
         let tile: TiledTile = layer.getTiledTileAt(i, j, true);
         if (tile.grid != 0) {
           tile.addComponent(RigidBody2D);
-          // tile.getComponent(RigidBody2D).group =
-          // PhysicsSystem2D.PhysicsGroup.DEFAULT;
           tile.getComponent(RigidBody2D).type = ERigidBody2DType.Kinematic;
           tile.getComponent(RigidBody2D).allowSleep = false;
           tile.getComponent(RigidBody2D).awakeOnLoad = true;

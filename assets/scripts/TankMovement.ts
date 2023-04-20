@@ -12,8 +12,9 @@ import {
   TiledMap,
   TiledLayer,
   TiledObjectGroup,
+  KeyCode,
 } from "cc";
-import { ANGLE, KEYCODE } from "./Constants";
+import { ANGLE } from "./Constants";
 const { ccclass, property } = _decorator;
 @ccclass("TankMovement")
 export class TankMovement extends Component {
@@ -23,7 +24,7 @@ export class TankMovement extends Component {
   @property(TiledObjectGroup) PlayerTankPosition: TiledObjectGroup;
   @property(TiledObjectGroup) EnemyTankPositions: TiledObjectGroup;
   @property(Node) EnemyTanks: Node;
-  keyPressedCode: KEYCODE = KEYCODE.NONE;
+  keyPressedCode: KeyCode = KeyCode.NONE;
   tank: Node = null;
   map: TiledMap = null;
   totalEnemyTanks: number = 0;
@@ -65,25 +66,25 @@ export class TankMovement extends Component {
   MoveTank = (event: any) => {
     let currentTankPosition = this.tank.getWorldPosition();
     switch (event.keyCode) {
-      case KEYCODE.UP: {
+      case KeyCode.ARROW_UP: {
         this.tank.angle = ANGLE.UP;
         currentTankPosition.y = currentTankPosition.y + 8;
         this.tank.setWorldPosition(currentTankPosition);
         break;
       }
-      case KEYCODE.LEFT: {
+      case KeyCode.ARROW_LEFT: {
         this.tank.angle = ANGLE.LEFT;
         currentTankPosition.x = currentTankPosition.x - 8;
         this.tank.setWorldPosition(currentTankPosition);
         break;
       }
-      case KEYCODE.DOWN: {
+      case KeyCode.ARROW_DOWN: {
         this.tank.angle = ANGLE.DOWN;
         currentTankPosition.y = currentTankPosition.y - 8;
         this.tank.setWorldPosition(currentTankPosition);
         break;
       }
-      case KEYCODE.RIGHT: {
+      case KeyCode.ARROW_RIGHT: {
         this.tank.angle = ANGLE.RIGHT;
         currentTankPosition.x = currentTankPosition.x + 8;
         this.tank.setWorldPosition(currentTankPosition);
