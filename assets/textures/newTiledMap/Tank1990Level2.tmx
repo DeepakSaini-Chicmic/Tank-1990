@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="43" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="5">
+ <tileset firstgid="1" source="grass-Layer.tsx"/>
+ <tileset firstgid="226" source="redWall.tsx"/>
+ <tileset firstgid="379" source="PathAndObjects.tsx"/>
+ <tileset firstgid="635" source="grass-Layers.tsx"/>
+ <tileset firstgid="1185" source="Castles.tsx"/>
+ <layer id="1" name="Background-Layer" width="43" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztwwENAAAMw6CamH+rF3JIWDVVVVX19QNr9VSp
+  </data>
+ </layer>
+ <layer id="2" name="Red-Wall-Layer" width="43" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzdV9sNgDAI7P5j1hF0APWDpCHyUg6rl1z8AOnVAtLeWlsO9mJG11yG51rMLeDLtVrw+iHi/FkrndtTVGjNwte0jrXtfecNrbwXeJClVeuHWeBarf4rQeuHKK1av47WP1prJjwxNR+yEZFaPWeh+ZCN+FYfuAOrpmbCqFWaaSztVfuScuBqXrPyCg1ea6j4mbFOIr6NpHXG2UXKjyf/lupZu0JrVh1pcay88d4jaY3onZOT4kRtiPsr31smd9TZSuA=
+  </data>
+ </layer>
+ <layer id="4" name="Grass-Layer" width="43" height="24">
+  <data encoding="base64" compression="zlib">
+   eJztldEKwCAIRaXfbp/R/ncLFvTQ0tTrGHTAp9TyZka0iSYnouMxzge5v4Ry+52Mf/NBsJJboisSra7Iu+b2X/Gt9hZnrSE7aSGJt/ZrYbRYzaMlp7GN6v+ix3pKGtuofuQ8qXhqgdbVI3/rC8kst+5jzS3pD+k5Zn+B971p8/Wz9a1W7/eAfl8bHV5/YATtjJG9ZH1jfzgrKm62btXVO262vmdXLBfo/kYs
+  </data>
+ </layer>
+ <layer id="3" name="Obstacles-Layer" width="43" height="24">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4C2QJ5poF2ACoyA7jEeZG7CBZyA7nQeALcOdBiRkmawhdFgS3OjYBRgAyzAdMo6RNKqCNCdokPErfjAcCobiPHLQJflpICBqu9GAXFgOOUdWuQLWpXntMgXw6U8HwW0AwCbVAUD
+  </data>
+ </layer>
+ <layer id="5" name="Trees-Layer" width="43" height="24">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF9ASFrEPH/sYBdis++0sHwG2hZNrZSqS+8gEOb1oA9Hi6zcLAcIdlYNxCCKDH00ugO18NUreOFEBpPncjUj81ymVi8zkuEEak/oEulwcroHX5SWxagoGBrOuJTUswQE6augksG28NkfJxsJblw7HOHymAkrijVtmgCTRHC4tZhMqqgegHWALNscJiFqGyarS+GzgAAFVvFTs=
+  </data>
+ </layer>
+ <objectgroup id="6" name="Player-Position">
+  <object id="1" name="Position1" x="674" y="610">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Enemy-Position">
+  <object id="2" name="Position1" x="140" y="128">
+   <point/>
+  </object>
+  <object id="3" name="Position2" x="684" y="122">
+   <point/>
+  </object>
+  <object id="4" name="Position3" x="1168" y="120">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

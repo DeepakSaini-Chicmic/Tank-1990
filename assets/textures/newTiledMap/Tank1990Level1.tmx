@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="43" height="23" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="12">
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="43" height="23" tilewidth="32" tileheight="32" infinite="0" nextlayerid="16" nextobjectid="107">
  <tileset firstgid="1" source="grass-Layers.tsx"/>
- <tileset firstgid="551" source="redWall.tsx"/>
+ <tileset firstgid="551" name="redWall" tilewidth="32" tileheight="32" tilecount="153" columns="17">
+  <image source="Screenshot 2023-04-18 at 9.26.42 AM.png" width="552" height="310"/>
+  <wangsets>
+   <wangset name="Brick-Set" type="corner" tile="-1"/>
+  </wangsets>
+ </tileset>
  <tileset firstgid="704" source="SilverWall.tsx"/>
  <tileset firstgid="848" source="WaterLayer.tsx"/>
- <tileset firstgid="890" name="Crown" tilewidth="32" tileheight="32" tilecount="364" columns="3">
+ <tileset firstgid="890" name="Crown" tilewidth="32" tileheight="32" tilecount="3" columns="3">
   <grid orientation="orthogonal" width="1" height="1"/>
   <image source="crown.png" width="100" height="46"/>
  </tileset>
- <layer id="1" name="Grass-Layer" width="43" height="23">
+ <tileset firstgid="893" source="grass-Layer.tsx"/>
+ <tileset firstgid="1118" source="Castles.tsx"/>
+ <layer id="9" name="Background-Layer" width="43" height="23">
   <data encoding="base64" compression="zlib">
-   eJztVdEKgzAQa/UvNv/C+f+/5j1sIKWZuVt0RRsIFLFJaO96KXWcifxm7ftgHMH6H0BZH8ancQLrljAbX8YFrO8KdLct4gpZy75m9mTAaK6adw1lX7P6qqwe77Kva5mOzIq8PWDvBs0ItY9CA80IFpE9UQ00I1h49kRqjjlzVtdTA5GszJmzuooaKP22UPSuWkvxzitn5eet+eb1a1ZV5onUifjtZfVqsv+3kLVDixXXgQpO
+   eJztwzEJAAAMA7DC/B91XBM7E0gvqaqqqvp+RvY74w==
+  </data>
+ </layer>
+ <layer id="3" name="Silver-Wall-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztl7EOgCAMRIn//1HIrMzo11gGEsJA2pPGol7SzbYvcF6CX5zzL60N+H6nigMZLOtn1ZEma563UgXB3F6PJmv9P43o0WRNNO+gOgVzez0W/Mr1igVWrlcssHK9YoGVo+KTGViLT55glWZv8QnCiuR8LSR7Ub8iu2oh2duyBiYzuuvOXbSsUXi+iNC7mCWzsr7MqvneGPX26XFp7JiF9QLLU+fF
+  </data>
+ </layer>
+ <layer id="4" name="Water-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFwxkEMA+0C4gHI9GtIHNgeLCDkerWkepvWoNRt1IHILsNHQ82MJTdOgqGDhhK8TbqVtLtHuxhNerWUYALAACRpRRu
   </data>
  </layer>
  <layer id="2" name="Red-Wall-Layer" width="43" height="23">
@@ -18,23 +35,8 @@
    eJztld0JgDAMhEuWUTdQN1D338dAXzQ0Sbn6U6UfBAqNJeXuagiNrzFQCB1XT3EtsfaeZuYZRq6J4lpi7T3NxjMsXCvFtcTas+joXFZfSjdET++s0lk13RA9vbNKZ9V0Q/T0ziqlpux61JRdDzS7VyLf7VQWtR7UD+j38t1OZVHrQf2Afi/f7VQWtR7UD3/IqfRZDWi6HO9gzXq3JjnZPN7BmtXzeqnHcrKZ6wEvK1/6FzQab7IDhAgk2w==
   </data>
  </layer>
- <layer id="8" name="Eagle-Layer" width="43" height="23">
-  <data encoding="base64" compression="zlib">
-   eJztzrEJADAMBLEHbx1n+GQIgxsJrr8EAAAA5pxK+ndr+2TfA5VCAXs=
-  </data>
- </layer>
- <layer id="4" name="Water-Layer" width="43" height="23">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFwxkEMCPwYAdxQDfGA3HCEHBrDtCNuUCcR6Fbh1L8jFS3gswIBOKgIeDvkZiH6AGCBnEagMU5ctwP1jQAi3PkuB+saQC5DBkKZd4oQIDRMps2YCDL7EBmVDyYwahbRwEuAACt5Bk3
-  </data>
- </layer>
- <layer id="3" name="Silver-Wall-Layer" width="43" height="23">
-  <data encoding="base64" compression="zlib">
-   eJztlrEKgDAMRIv//1HaWTurX2M6FEqHkpyJpuLBLWKSR3sG5ymE+aNegfc3clJk8Kyf1UaWrLnfQo6Cvr0aS9b6e9KosWTdqd9BPgV9ezUe8srNigdWblY8sHKz4oGVo5KTEVhLTt5gle7ekhOEFdnztZDdi+YVmVUL2b0ta2Qyo7Pu3EXLmoTniwi9i1F2VpYmq/U/vDar5DnSX9NPzBiJ9QIqiuiH
-  </data>
- </layer>
  <objectgroup id="6" name="PlayerPosition">
-  <object id="1" name="Position1" x="656.045" y="582.641">
+  <object id="1" name="Position1" x="672.045" y="610.641">
    <point/>
   </object>
  </objectgroup>
@@ -49,4 +51,68 @@
    <point/>
   </object>
  </objectgroup>
+ <objectgroup id="13" name="EnemyTurnings3">
+  <object id="72" name="Turning1" x="246.667" y="128">
+   <point/>
+  </object>
+  <object id="74" name="Turning2" x="242.667" y="314.667">
+   <point/>
+  </object>
+  <object id="75" name="Turning3" x="312" y="312">
+   <point/>
+  </object>
+  <object id="76" name="Turning4" x="306.667" y="478.667">
+   <point/>
+  </object>
+  <object id="77" name="Turning5" x="344" y="478.667">
+   <point/>
+  </object>
+  <object id="78" name="Turning6" x="336" y="636">
+   <point/>
+  </object>
+  <object id="80" name="Turning7" x="529.333" y="637.333">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="14" name="EnemyTurnings2">
+  <object id="97" name="Turning1" x="532" y="130.667">
+   <point/>
+  </object>
+  <object id="99" name="Turning2" x="532" y="317.333">
+   <point/>
+  </object>
+  <object id="100" name="Turning3" x="670.667" y="316">
+   <point/>
+  </object>
+  <object id="101" name="Turning4" x="673.333" y="542.667">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="15" name="EnemyTurnings1">
+  <object id="102" name="Turning1" x="1278.67" y="128">
+   <point/>
+  </object>
+  <object id="103" name="Turning2" x="1281.33" y="313.333">
+   <point/>
+  </object>
+  <object id="104" name="Turning3" x="1137.33" y="318.667">
+   <point/>
+  </object>
+  <object id="105" name="Turning4" x="1134.67" y="640">
+   <point/>
+  </object>
+  <object id="106" name="Turning5" x="850.667" y="640">
+   <point/>
+  </object>
+ </objectgroup>
+ <layer id="8" name="Castle-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztzrkNACAQxMANrv+yeBrgoBu2AiIQiUdybgkAAAAAgHtaSN0VV+P3zdn033LD5YPXDYVoBp0=
+  </data>
+ </layer>
+ <layer id="1" name="Grass-Layer" width="43" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztVdEKgzAQa/UvNv/C+f+/5j1sIKWZuVt0RRsIFLFJaO96KXWcifxm7ftgHMH6H0BZH8ancQLrljAbX8YFrO8KdLct4gpZy75m9mTAaK6adw1lX7P6qqwe77Kva5mOzIq8PWDvBs0ItY9CA80IFpE9UQ00I1h49kRqjjlzVtdTA5GszJmzuooaKP22UPSuWkvxzitn5eet+eb1a1ZV5onUifjtZfVqsv+3kLVDixXXgQpO
+  </data>
+ </layer>
 </map>

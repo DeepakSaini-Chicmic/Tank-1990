@@ -42,8 +42,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -412.025,
-      "y": 180.466,
+      "x": -412.404,
+      "y": 171.361,
       "z": 0
     },
     "_lrot": {
@@ -215,8 +215,8 @@
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
+      "x": 0.490525,
+      "y": 0.34825
     },
     "_id": ""
   },
@@ -278,7 +278,7 @@
     },
     "tag": 0,
     "_group": 1,
-    "_density": 1,
+    "_density": 2000,
     "_sensor": false,
     "_friction": 0.2,
     "_restitution": 0,
@@ -290,7 +290,7 @@
     "_size": {
       "__type__": "cc.Size",
       "width": 40,
-      "height": 60
+      "height": 40
     },
     "_id": ""
   },

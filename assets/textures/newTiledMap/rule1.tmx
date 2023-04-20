@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="4" height="4" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" source="grass-Layers.tsx"/>
+ <tileset firstgid="551" source="redWall.tsx"/>
+ <tileset firstgid="704" source="SilverWall.tsx"/>
+ <layer id="1" name="regions" width="4" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAElkxYBHEAAApiADw=
+  </data>
+ </layer>
+ <layer id="2" name="input_layer" width="4" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAE6kxYBHEAAAdKACo=
+  </data>
+ </layer>
+ <layer id="3" name="output_layer" width="4" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAEB5iwCOIAACGWAMM=
+  </data>
+ </layer>
+</map>

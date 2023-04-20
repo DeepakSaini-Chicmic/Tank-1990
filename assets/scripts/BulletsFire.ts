@@ -7,8 +7,10 @@ import {
   instantiate,
   tween,
   Vec3,
+  UITransform,
 } from "cc";
 import { ANGLE } from "./Constants";
+import { DestroyBricks } from "./DestroyBricks";
 import { TankMovement } from "./TankMovement";
 const { ccclass, property } = _decorator;
 
@@ -20,57 +22,39 @@ export class BulletsFire extends Component {
 
   fire() {
     let tank = this.Map.getComponent(TankMovement).tank;
-    let tankPosition = tank.getWorldPosition();
     let bulletCreated = instantiate(this.Bullet);
-    this.node.addChild(bulletCreated);
-    bulletCreated.setWorldPosition(tankPosition);
+    tank.addChild(bulletCreated);
+    bulletCreated.setPosition(0, 0);
     bulletCreated.angle = tank.angle;
-    this.directBullet(bulletCreated, tankPosition);
-    console.log("Firing");
+    this.moveBullet(bulletCreated, bulletCreated.getPosition());
   }
 
-  directBullet(bullet: Node, tankPosition: Vec3) {
+  moveBullet(bullet: Node, bulletPosition: Vec3) {
     switch (bullet.angle) {
       case ANGLE.UP: {
-        console.log("UP ANGLE");
-
         tween(bullet)
-          .by(0.5, {
-            worldPosition: new Vec3(0, tankPosition.y + 10),
-          })
+          .by(0.1, { worldPosition: new Vec3(0, bulletPosition.y + 50) })
           .repeatForever()
           .start();
         break;
       }
       case ANGLE.RIGHT: {
-        console.log("RIGHT ANGLE");
-
         tween(bullet)
-          .by(0.5, {
-            worldPosition: new Vec3(0, tankPosition.y - 10),
-          })
+          .by(0.1, { worldPosition: new Vec3(bulletPosition.x + 50, 0) })
           .repeatForever()
           .start();
         break;
       }
       case ANGLE.LEFT: {
-        console.log("LEFT ANGLE");
-
         tween(bullet)
-          .by(0.5, {
-            worldPosition: new Vec3(tankPosition.x - 10, 0),
-          })
+          .by(0.1, { worldPosition: new Vec3(bulletPosition.x - 50, 0) })
           .repeatForever()
           .start();
         break;
       }
       case ANGLE.DOWN: {
-        console.log("DOWN ANGLE");
-
         tween(bullet)
-          .by(0.5, {
-            worldPosition: new Vec3(tankPosition.x + 10, 0),
-          })
+          .by(0.1, { worldPosition: new Vec3(0, bulletPosition.y - 50) })
           .repeatForever()
           .start();
         break;

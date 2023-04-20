@@ -5,25 +5,50 @@
     },
     "activeFile": "Tank1990Level1.tmx",
     "expandedProjectPaths": [
+        "."
     ],
     "fileStates": {
         "": {
             "scaleInDock": 1
+        },
+        "Crown.tsx": {
+            "scaleInDock": 0.33,
+            "scaleInEditor": 1
+        },
+        "Eagle.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "SilverWall.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "Tank1990Level1.tmx": {
-            "scale": 0.6351744186046511,
-            "selectedLayer": 5,
+            "scale": 0.5,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 1324.8329519450804,
-                "y": 52.74141876430201
+                "x": 1165,
+                "y": 209
             }
         },
         "Tank1990Level1.tmx#Crown": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "Tank1990Level1.tmx#redWall": {
+            "scaleInDock": 1
+        },
+        "Tank1990Level2.tmx": {
+            "expandedObjectLayers": [
+                6,
+                7
+            ],
+            "scale": 0.5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 825,
+                "y": 121
+            }
         },
         "WaterLayer.tsx": {
             "scaleInDock": 1,
@@ -35,11 +60,20 @@
         },
         "redWall.tsx": {
             "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInEditor": 2
+        },
+        "rule1.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 0.5,
+                "y": 0.5
+            }
         }
     },
+    "frame.defaultDuration": 15,
     "last.imagePath": "/Users/deepaksaini/Documents/newTiledMap",
-    "map.height": 23,
+    "map.height": 24,
     "map.lastUsedFormat": "tmx",
     "map.layerDataFormat": null,
     "map.width": 43,
@@ -48,14 +82,18 @@
         "redWall.tsx",
         "grass-Layers.tsx",
         "WaterLayer.tsx",
-        "SilverWall.tsx"
+        "SilverWall.tsx",
+        "Eagle.tsx",
+        "Crown.tsx"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
+        "redWall.tsx",
+        "Crown.tsx",
+        "Eagle.tsx",
         "SilverWall.tsx",
         "WaterLayer.tsx",
         "grass-Layers.tsx",
-        "redWall.tsx",
         "Tank1990Level1.tmx"
     ],
     "tileset.lastUsedFormat": "tsx"

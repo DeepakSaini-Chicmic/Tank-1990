@@ -2,7 +2,7 @@
   "ver": "1.0.25",
   "importer": "image",
   "imported": true,
-  "uuid": "227ef529-60df-4446-bf2b-ea1543a44cf8",
+  "uuid": "e22c62c9-d828-46fb-99ac-1c792077cbb0",
   "files": [
     ".jpeg",
     ".json"
@@ -10,14 +10,14 @@
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "227ef529-60df-4446-bf2b-ea1543a44cf8@6c48a",
+      "uuid": "e22c62c9-d828-46fb-99ac-1c792077cbb0@6c48a",
       "displayName": "green-grass",
       "id": "6c48a",
       "name": "texture",
       "userData": {
         "wrapModeS": "clamp-to-edge",
         "wrapModeT": "clamp-to-edge",
-        "imageUuidOrDatabaseUri": "227ef529-60df-4446-bf2b-ea1543a44cf8",
+        "imageUuidOrDatabaseUri": "e22c62c9-d828-46fb-99ac-1c792077cbb0",
         "isUuid": true,
         "visible": false,
         "minfilter": "linear",
@@ -34,7 +34,7 @@
     },
     "f9941": {
       "importer": "sprite-frame",
-      "uuid": "227ef529-60df-4446-bf2b-ea1543a44cf8@f9941",
+      "uuid": "e22c62c9-d828-46fb-99ac-1c792077cbb0@f9941",
       "displayName": "green-grass",
       "id": "f9941",
       "name": "spriteFrame",
@@ -114,7 +114,7 @@
           ]
         },
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "227ef529-60df-4446-bf2b-ea1543a44cf8@6c48a",
+        "imageUuidOrDatabaseUri": "e22c62c9-d828-46fb-99ac-1c792077cbb0@6c48a",
         "atlasUuid": ""
       },
       "ver": "1.0.11",
@@ -129,6 +129,6 @@
     "type": "sprite-frame",
     "fixAlphaTransparencyArtifacts": true,
     "hasAlpha": false,
-    "redirect": "227ef529-60df-4446-bf2b-ea1543a44cf8@f9941"
+    "redirect": "e22c62c9-d828-46fb-99ac-1c792077cbb0@f9941"
   }
 }
