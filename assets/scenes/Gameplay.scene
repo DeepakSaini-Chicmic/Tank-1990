@@ -21,11 +21,11 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 53
+      "__id__": 52
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 54
+      "__id__": 53
     },
     "_id": "5fc09887-4706-48c7-a66e-dbd7c2768a80"
   },
@@ -44,11 +44,14 @@
         "__id__": 5
       },
       {
-        "__id__": 43
+        "__id__": 42
       }
     ],
     "_active": true,
     "_components": [
+      {
+        "__id__": 48
+      },
       {
         "__id__": 49
       },
@@ -57,9 +60,6 @@
       },
       {
         "__id__": 51
-      },
-      {
-        "__id__": 52
       }
     ],
     "_prefab": null,
@@ -229,9 +229,6 @@
       },
       {
         "__id__": 41
-      },
-      {
-        "__id__": 42
       }
     ],
     "_prefab": null,
@@ -1228,6 +1225,9 @@
     },
     "_enabled": true,
     "__prefab": null,
+    "Canvas": {
+      "__id__": 2
+    },
     "GrassLayer": {
       "__id__": 36
     },
@@ -1248,20 +1248,6 @@
     "_id": "377sisC15NLJa/arRqy4b0"
   },
   {
-    "__type__": "66fed3OnBFH0otuB4Sxsz9C",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 5
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "RedTiles": {
-      "__id__": 17
-    },
-    "_id": "c4fNh9v3JGt6IqmECc+NWt"
-  },
-  {
     "__type__": "cc.Node",
     "_name": "BulletFire",
     "_objFlags": 0,
@@ -1272,16 +1258,16 @@
     "_active": true,
     "_components": [
       {
+        "__id__": 43
+      },
+      {
         "__id__": 44
       },
       {
         "__id__": 45
       },
       {
-        "__id__": 46
-      },
-      {
-        "__id__": 48
+        "__id__": 47
       }
     ],
     "_prefab": null,
@@ -1318,7 +1304,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 43
+      "__id__": 42
     },
     "_enabled": true,
     "__prefab": null,
@@ -1339,7 +1325,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 43
+      "__id__": 42
     },
     "_enabled": true,
     "__prefab": null,
@@ -1377,13 +1363,13 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 43
+      "__id__": 42
     },
     "_enabled": true,
     "__prefab": null,
     "clickEvents": [
       {
-        "__id__": 47
+        "__id__": 46
       }
     ],
     "_interactable": true,
@@ -1431,7 +1417,7 @@
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 43
+      "__id__": 42
     },
     "component": "",
     "_componentId": "899f7uehG9LCYIlOj/zMqTa",
@@ -1443,7 +1429,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 43
+      "__id__": 42
     },
     "_enabled": true,
     "__prefab": null,
@@ -1551,19 +1537,19 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 55
+      "__id__": 54
     },
     "shadows": {
-      "__id__": 56
+      "__id__": 55
     },
     "_skybox": {
-      "__id__": 57
+      "__id__": 56
     },
     "fog": {
-      "__id__": 58
+      "__id__": 57
     },
     "octree": {
-      "__id__": 59
+      "__id__": 58
     }
   },
   {

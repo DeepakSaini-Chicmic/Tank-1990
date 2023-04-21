@@ -3,13 +3,21 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Tank1990Level1.tmx",
+    "activeFile": "WaterLayer.tsx",
     "expandedProjectPaths": [
         "."
     ],
     "fileStates": {
         "": {
             "scaleInDock": 1
+        },
+        "Castles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Child-Animated-Tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Crown.tsx": {
             "scaleInDock": 0.33,
@@ -19,16 +27,24 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "More-Objects.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "PathAndObjects.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "SilverWall.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "Tank1990Level1.tmx": {
             "scale": 0.5,
-            "selectedLayer": 0,
+            "selectedLayer": 8,
             "viewCenter": {
-                "x": 1165,
-                "y": 209
+                "x": 801,
+                "y": 317
             }
         },
         "Tank1990Level1.tmx#Crown": {
@@ -54,13 +70,17 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "grass-Layer.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "grass-Layers.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "redWall.tsx": {
             "scaleInDock": 1,
-            "scaleInEditor": 2
+            "scaleInEditor": 1
         },
         "rule1.tmx": {
             "scale": 1,
@@ -79,22 +99,33 @@
     "map.width": 43,
     "openFiles": [
         "Tank1990Level1.tmx",
-        "redWall.tsx",
         "grass-Layers.tsx",
         "WaterLayer.tsx",
         "SilverWall.tsx",
         "Eagle.tsx",
-        "Crown.tsx"
+        "rule1.tmx",
+        "Tank1990Level2.tmx",
+        "grass-Layer.tsx",
+        "redWall.tsx",
+        "Child-Animated-Tileset.tsx",
+        "PathAndObjects.tsx",
+        "More-Objects.tsx",
+        "Castles.tsx"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
-        "redWall.tsx",
-        "Crown.tsx",
-        "Eagle.tsx",
-        "SilverWall.tsx",
-        "WaterLayer.tsx",
+        "Tank1990Level1.tmx",
         "grass-Layers.tsx",
-        "Tank1990Level1.tmx"
+        "Castles.tsx",
+        "More-Objects.tsx",
+        "PathAndObjects.tsx",
+        "Child-Animated-Tileset.tsx",
+        "redWall.tsx",
+        "grass-Layer.tsx",
+        "Tank1990Level2.tmx",
+        "rule1.tmx",
+        "Eagle.tsx",
+        "SilverWall.tsx"
     ],
     "tileset.lastUsedFormat": "tsx"
 }

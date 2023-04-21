@@ -19,6 +19,7 @@ import { EnemyTanks } from "./EnemyTanks";
 const { ccclass, property } = _decorator;
 @ccclass("TankMovement")
 export class TankMovement extends Component {
+  @property(Node) Canvas: Node;
   @property({ type: Node }) GrassLayer: Node;
   @property({ type: Prefab }) PlayerTank: Prefab;
   @property(Prefab) EnemyTank: Prefab;
@@ -32,7 +33,6 @@ export class TankMovement extends Component {
   i = 1;
   start() {}
   onLoad() {
-    // this.EnemyTanks.setPosition()
     this.tank = instantiate(this.PlayerTank);
     this.map = this.node.getComponent(TiledMap);
     this.node.addChild(this.tank);

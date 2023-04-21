@@ -8,9 +8,12 @@ import {
   tween,
   Vec3,
   UITransform,
+  RigidBody2D,
+  Vec2,
 } from "cc";
-import { ANGLE } from "./Constants";
+import { ANGLE, VELOCITY } from "./Constants";
 import { DestroyBricks } from "./DestroyBricks";
+import { PlayerTank } from "./PlayerTank";
 import { TankMovement } from "./TankMovement";
 const { ccclass, property } = _decorator;
 
@@ -23,7 +26,7 @@ export class BulletsFire extends Component {
   fire() {
     let tank = this.Map.getComponent(TankMovement).tank;
     let bulletCreated = instantiate(this.Bullet);
-    tank.addChild(bulletCreated);
+    tank.getComponent(PlayerTank).Barrel.addChild(bulletCreated);
     bulletCreated.setPosition(0, 0);
     bulletCreated.angle = tank.angle;
     this.moveBullet(bulletCreated, bulletCreated.getPosition());
@@ -32,31 +35,31 @@ export class BulletsFire extends Component {
   moveBullet(bullet: Node, bulletPosition: Vec3) {
     switch (bullet.angle) {
       case ANGLE.UP: {
-        tween(bullet)
-          .by(0.1, { worldPosition: new Vec3(0, bulletPosition.y + 50) })
-          .repeatForever()
-          .start();
+        bullet.getComponent(RigidBody2D).linearVelocity = new Vec2(
+          VELOCITY.NONE,
+          VELOCITY.FIRE_VELOCITY
+        );
         break;
       }
       case ANGLE.RIGHT: {
-        tween(bullet)
-          .by(0.1, { worldPosition: new Vec3(bulletPosition.x + 50, 0) })
-          .repeatForever()
-          .start();
+        bullet.getComponent(RigidBody2D).linearVelocity = new Vec2(
+          VELOCITY.FIRE_VELOCITY,
+          VELOCITY.NONE
+        );
         break;
       }
       case ANGLE.LEFT: {
-        tween(bullet)
-          .by(0.1, { worldPosition: new Vec3(bulletPosition.x - 50, 0) })
-          .repeatForever()
-          .start();
+        bullet.getComponent(RigidBody2D).linearVelocity = new Vec2(
+          -VELOCITY.FIRE_VELOCITY,
+          VELOCITY.NONE
+        );
         break;
       }
       case ANGLE.DOWN: {
-        tween(bullet)
-          .by(0.1, { worldPosition: new Vec3(0, bulletPosition.y - 50) })
-          .repeatForever()
-          .start();
+        bullet.getComponent(RigidBody2D).linearVelocity = new Vec2(
+          VELOCITY.NONE,
+          -VELOCITY.FIRE_VELOCITY
+        );
         break;
       }
     }

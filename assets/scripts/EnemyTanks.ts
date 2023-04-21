@@ -8,23 +8,27 @@ import {
   UITransform,
   TiledMap,
 } from "cc";
+import { TankMovement } from "./TankMovement";
 const { ccclass, property } = _decorator;
 
 @ccclass("EnemyTanks")
 export class EnemyTanks extends Component {
-  @property(Node) Map: Node;
-  enemyTankPositionsArray: Vec2[] = [];
-  start() {}
+  Map: Node;
+  enemyTankPositionsArray: Vec3[] = [];
+  start() {
+    this.Map = this.node.parent.getComponent(TankMovement).map.node;
+    // this.TankPositions();
+  }
 
-  TankPositions(TankIndex: number) {
+  TankPositions() {
     let numberOfObject =
       this.Map.getComponent(TiledMap).getObjectGroups().length;
-    for (let i = 1; i < numberOfObject; i++) {
+    for (let i = 1; i <= numberOfObject; i++) {
       let totalPositionsInGroup = this.Map.getComponent(TiledMap)
-        .getObjectGroup(`EnemyTurning${i}`)
+        .getObjectGroup(`EnemyTurnings${i}`)
         .getObjects().length;
       let pathObj = this.Map.getComponent(TiledMap).getObjectGroup(
-        `EnemyTurning${i}`
+        `EnemyTurnings${i}`
       );
       for (let j = 1; j < totalPositionsInGroup; i++) {
         let button_pos = pathObj.getObject(`Turning${j}`);
@@ -40,9 +44,10 @@ export class EnemyTanks extends Component {
         var positiontoCan = this.Map.parent
           .getComponent(UITransform)
           .convertToNodeSpaceAR(new Vec3(worlPosOfBtn.x, worlPosOfBtn.y));
-        this.node.setPosition(positiontoCan);
+        this.enemyTankPositionsArray.push(positiontoCan);
       }
     }
+    console.log(this.enemyTankPositionsArray);
   }
 
   update(deltaTime: number) {}
