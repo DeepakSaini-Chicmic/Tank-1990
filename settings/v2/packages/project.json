@@ -9,15 +9,15 @@
     "collisionGroups": [
       {
         "index": 1,
-        "name": "ENEMY TANK"
+        "name": "ENEMY_TANK"
       },
       {
         "index": 2,
-        "name": "PLAYER TANK"
+        "name": "PLAYER_TANK"
       },
       {
         "index": 3,
-        "name": "RED WALLS"
+        "name": "BREAKABLE_WALL"
       },
       {
         "index": 4,
@@ -25,7 +25,7 @@
       },
       {
         "index": 5,
-        "name": "SILVER WALLS"
+        "name": "UNBREAKABLE_WALL"
       },
       {
         "index": 6,

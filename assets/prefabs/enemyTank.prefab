@@ -42,8 +42,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 362.831,
-      "y": 200.491,
+      "x": 4.894,
+      "y": 23.468,
       "z": 0
     },
     "_lrot": {
@@ -270,7 +270,7 @@
     },
     "tag": 0,
     "_group": 1,
-    "_density": 1,
+    "_density": 10,
     "_sensor": false,
     "_friction": 0.2,
     "_restitution": 0,
@@ -305,7 +305,7 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "29RKu4AktKv6fmNis4t6Cq"
+    "fileId": "ablwc5FHBHE4Q51QCr44kg"
   },
   {
     "__type__": "cc.PrefabInfo",
